@@ -1,0 +1,22 @@
+@model List<Dictionary<string, object>>;
+
+    <h1 class="text-center">
+        All Quotes
+    </h1>
+    <h5 class="text-center">
+        <a href="new" class="btn btn-info">New Quote</a>
+    </h5>
+
+    @foreach (Dictionary<string, object> quote in Model)
+        {
+        <div class="card mx-auto mb-3" style="width: 25rem;">
+            <div class="card-header">
+                <h5 class="card-title">@quote["Name"]</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    @quote["Message"]
+                </p>
+            </div>
+        </div>
+        }

@@ -10,7 +10,7 @@ namespace DbConnection	//you can leave as is, or change to your own namespace
         static string db = "quote_db"; //Change to your schema name
         static string port = "3306"; //Potentially 8889
         static string user = "root";
-        static string pass = "a1n332020";
+        static string pass = "";
         internal static IDbConnection Connection
         {
             get
